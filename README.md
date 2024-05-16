@@ -12,8 +12,8 @@ ubuntu 20.04 以上
 
 ## 启动方式
 
-1. `bash ./Run.sh`
-2. 打开 http://localhost:10001（可以在 Run.sh 里面配置端口）
+1. `bash ./Start.sh`
+2. 打开 http://localhost:10001 （可以在 Start.sh 里面配置端口）
 
 ## 截图
 
