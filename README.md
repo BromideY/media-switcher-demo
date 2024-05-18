@@ -17,8 +17,8 @@ ubuntu 20.04 以上
 
 ## 截图
 
-![](./pic/preview_1.png)
+![](./pic/1.png)
 
-![](./pic/preview_2.png)
+![](./pic/2.png)
 
-![](./pic/preview_3.png)
+![](./pic/3.png)
