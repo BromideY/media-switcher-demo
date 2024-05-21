@@ -12,6 +12,21 @@ ubuntu 20.04 以上
 
 ## 启动方式
 
+克隆仓库
+
+```
+git clone https://github.com/BromideY/media-switcher-demo.git
+git lfs fetch
+```
+
+第一次启动需要准备运行环境
+
+```
+bash ./PrepareEnv.sh
+```
+
+接下来就可以运行程序了
+
 1. `bash ./Start.sh`
 2. 打开 http://localhost:10001 （可以在 Start.sh 里面配置端口）
 
