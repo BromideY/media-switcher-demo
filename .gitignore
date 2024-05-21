@@ -2,3 +2,7 @@ lib/cef/
 
 srs/html/hls
 
+srs/srs.log
+
+srs/srs.pid
+
