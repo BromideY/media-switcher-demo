@@ -6,3 +6,11 @@ srs/srs.log
 
 srs/srs.pid
 
+srs/srs.id
+
+GPUCache/
+
+logs/
+
+debug.log
+
