@@ -22,7 +22,7 @@ https://github.com/nihaojob/vue-fabric-editor<br>
 
 ## 系统要求
 
-ubuntu 20.04 以上
+ubuntu 22.04 以上
 
 ## 启动方式
 
@@ -31,6 +31,7 @@ ubuntu 20.04 以上
 ```
 git clone https://github.com/BromideY/media-switcher-demo.git
 git lfs fetch
+git lfs checkout
 ```
 
 第一次启动需要准备运行环境
