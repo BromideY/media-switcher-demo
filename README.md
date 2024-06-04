@@ -40,10 +40,20 @@ git lfs checkout
 bash ./PrepareEnv.sh
 ```
 
-接下来就可以运行程序了
+### 直接运行
 
-1. `bash ./Start.sh`
-2. 打开 http://localhost:10001 （可以在 Start.sh 里面配置端口）
+`bash ./Start.sh`
+
+### Docker 运行
+
+```
+bash BuildDocker.sh
+bash RunDocker.sh
+```
+
+### 查看页面
+
+http://localhost:10001 （可以在 Start.sh 里面配置端口）
 
 ## 截图
 

@@ -14,7 +14,8 @@ apt install -y libnss3 \
 		 libxkbcommon0 \
 		 libpango-1.0-0 \
 		 libcairo2 \
-		 libasound2
+		 libasound2 \
+		 xvfb
 
 mkdir lib/cef
 tar xzvf lib/cef.tar.gz -C lib/cef
