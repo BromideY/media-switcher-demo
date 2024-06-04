@@ -1,14 +1,28 @@
 #!/bin/bash
 
-cd /media-switcher-demo
+ProcessExist(){
+    if ps aux | grep -v grep | grep $1 > /dev/null
+    then   
+        return 1
+    else
+        return 0
+    fi
+}
 
-cd srs && ./srs -c srs.conf
-
-cd ..
+ProcessExist "srs"
+if [ $? -eq 0 ]; then
+    echo "start srs"
+    cd srs && ./srs -c srs.conf
+    cd ..
+fi
 
 if [ -z "$XDG_CURRENT_DESKTOP" ]; then
-    Xvfb -ac :3 -screen 0 1920x1080x24 > /dev/null 2>&1 &
-    export DISPLAY=:3
+    ProcessExist "Xvfb"
+    if [ $? -eq 0 ]; then
+        echo "start Xvfb"
+        Xvfb -ac :3 -screen 0 1920x1080x24 > /dev/null 2>&1 &
+        export DISPLAY=:3
+    fi
 fi
 
 export LD_LIBRARY_PATH=`pwd`/lib:`pwd`/lib/cef

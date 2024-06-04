@@ -27,7 +27,7 @@ COPY media_switcher/ /media-switcher-demo/media_switcher/
 COPY scene_editor/ /media-switcher-demo/scene_editor/
 COPY MediaSwitcher /media-switcher-demo/
 
-ENTRYPOINT ["bash","/media-switcher-demo/Start.sh"]
+ENTRYPOINT /bin/sh -c 'cd media-switcher-demo && ./Start.sh'
 
 
 

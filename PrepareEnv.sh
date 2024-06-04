@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt udpate
+apt update
 apt install -y libnss3 \
 		 libatk1.0-0 \
 		 libatk-bridge2.0-0 \
