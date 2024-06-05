@@ -21,10 +21,10 @@ if [ -z "$XDG_CURRENT_DESKTOP" ]; then
     if [ $? -eq 0 ]; then
         echo "start Xvfb"
         Xvfb -ac :3 -screen 0 1920x1080x24 > /dev/null 2>&1 &
-        export DISPLAY=:3
     fi
 fi
 
+export DISPLAY=:3
 export LD_LIBRARY_PATH=`pwd`/lib:`pwd`/lib/cef
 export LD_PRELOAD=`pwd`/lib/cef/libcef.so
 
