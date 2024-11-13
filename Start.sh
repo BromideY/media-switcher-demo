@@ -32,4 +32,7 @@ export HTTP_SERVER_LISTEN_PORT=10001
 
 export CLEANUP_MOD=true
 
-./MediaSwitcher
+while true
+do
+    ./MediaSwitcher
+done
